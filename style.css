@@ -1,0 +1,280 @@
+/* 1. RESET GENERALE: azzera i margini predefiniti del browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0f172a; /* Sfondo scuro moderno (blu ardesia) */
+  color: #f8fafc;            /* Testo chiaro leggibile */
+  line-height: 1.6;
+}
+
+/* 2. STILE DELLA NAVBAR */
+.navbar {
+  display: flex;                      /* Attiva Flexbox */
+  justify-content: space-between;     /* Spinge il logo a sinistra e i link a destra */
+  align-items: center;                /* Centra gli elementi verticalmente */
+  padding: 1.25rem 2rem;              /* Spazio interno: sopra/sotto e lati */
+  background-color: #1e293b;          /* Colore leggermente più chiaro dello sfondo */
+  border-bottom: 1px solid #334155;   /* Sottile linea di separazione */
+}
+
+/* Stile del Logo */
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #38bdf8; /* Celeste acceso */
+  letter-spacing: 0.5px;
+}
+
+/* Lista dei link di navigazione */
+.nav-links {
+  display: flex;          /* Dispone i link in orizzontale */
+  list-style: none;       /* Rimuove i pallini della lista */
+  gap: 1.5rem;            /* Spazio uniforme tra una voce e l'altra */
+}
+
+/* Singoli link */
+.nav-links a {
+  color: #94a3b8;         /* Grigio chiaro */
+  text-decoration: none;  /* Rimuove la sottolineatura blu classica */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Effetto al passaggio del mouse sui link */
+.nav-links a:hover {
+  color: #38bdf8;         /* Cambia colore al passaggio del mouse */
+}
+
+/* 3. HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;              /* Occupa il 70% dell'altezza dello schermo */
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;              /* Impedisce al testo di allargarsi troppo */
+}
+
+/* Badge piccolo sopra il titolo */
+.badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;         /* Crea la forma arrotondata a pillola */
+  margin-bottom: 1.5rem;
+}
+
+/* Titolo Principale (H1) */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+/* Sottotitolo descrittivo */
+.subtitle {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+/* Contenitore pulsanti */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;               /* Su schermi piccoli i bottoni vanno a capo */
+}
+
+/* Stile base pulsanti */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Pulsante principale azzurro */
+.btn-primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);    /* Leggero sollevamento al passaggio del mouse */
+}
+
+/* Pulsante secondario trasparente */
+.btn-secondary {
+  border: 1px solid #334155;
+  color: #f8fafc;
+}
+
+.btn-secondary:hover {
+  background-color: #1e293b;
+  border-color: #475569;
+}
+
+/* 4. SEZIONE COMPETENZE / CARDS */
+.skills {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;               /* Centra orizzontalmente l'intera sezione */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+}
+
+/* Contenitore a griglia flessibile per le schede */
+.cards-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;              /* Se lo schermo si restringe, le card vanno sotto */
+  justify-content: center;
+}
+
+/* Singola Card */
+.card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1 1 300px;              /* Base 300px: cresce e si restringe fluidamente */
+  max-width: 350px;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Effetto al passaggio del mouse sulla card */
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #f8fafc;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 5. SEZIONE CONTATTI */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #0b1120;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+}
+
+.btn-block {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* 6. FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid #334155;
+  font-size: 0.9rem;
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+}

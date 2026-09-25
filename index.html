@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francesco | Portfolio</title>
+  <!-- Questo comando collega il foglio di stile CSS all'HTML -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ambiente pronto per lo sviluppo!</h1>
-    <p>Questo è il mio primo test locale.</p>
+
+  <!-- 1. BARRA DI NAVIGAZIONE -->
+  <header class="navbar">
+    <div class="logo">Francesco.dev</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#bio">Chi sono</a></li>
+        <li><a href="#competenze">Competenze</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- 2. HERO SECTION -->
+  <main>
+    <section class="hero" id="bio">
+      <div class="hero-content">
+        <span class="badge">Disponibile per nuovi progetti</span>
+        <h1>Ciao, sono Francesco</h1>
+        <p class="subtitle">
+          Studente di Ingegneria Informatica e sviluppatore web. 
+          Costruisco siti web veloci, moderni e ottimizzati per dispositivi mobili.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contatti" class="btn btn-primary">Parliamo del tuo progetto</a>
+          <a href="#competenze" class="btn btn-secondary">Guarda cosa so fare</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEZIONE COMPETENZE / SERVIZI -->
+    <section class="skills" id="competenze">
+      <h2 class="section-title">Cosa posso fare per te</h2>
+      <p class="section-subtitle">Soluzioni semplici, funzionali e su misura per la tua attività</p>
+      
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Siti Web Vetrina</h3>
+          <p>Realizzazione di pagine web veloci, pulite e ottimizzate per presentare al meglio la tua attività locale o professionale.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Design Responsive</h3>
+          <p>Ogni sito viene progettato per funzionare senza problemi su qualsiasi schermo: smartphone, tablet e computer fisso.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Presenza Online & SEO</h3>
+          <p>Configurazione hosting, dominio personalizzato e indicizzazione di base su Google e motori di ricerca per farti trovare.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEZIONE CONTATTI -->
+    <section class="contact" id="contatti">
+      <h2 class="section-title">Iniziamo a collaborare</h2>
+      <p class="section-subtitle">Hai un'idea per un progetto o vuoi modernizzare la tua presenza web? Scrivimi un messaggio.</p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Grazie per il messaggio! Questa è una demo.');">
+        <div class="form-group">
+          <label for="name">Nome o Attività</label>
+          <input type="text" id="name" placeholder="Es. Mario Rossi o Caffè Centrale" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="mario@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Come posso aiutarti?</label>
+          <textarea id="message" rows="4" placeholder="Descrivi brevemente il sito che vorresti realizzare..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Invia richiesta</button>
+      </form>
+    </section>
+  </main>
+
+  </main>
+<!-- 5. FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Francesco. Tutti i diritti riservati.</p>
+    <div class="footer-links">
+      <a href="https://github.com/francescomicallo19-alt" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="#bio">Torna su ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
