@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Francesco | Portfolio</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Questo comando collega il foglio di stile CSS all'HTML -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,18 +26,18 @@
   </header>
 
 <!-- 2. HERO SECTION -->
-  <main>
     <section class="hero" id="bio">
       <div class="hero-content">
-        <span class="badge">Disponibile per nuovi progetti</span>
-        <h1>Ciao, sono Francesco</h1>
+        <span class="badge">Sviluppo Web su Misura • Campania</span>
+        <h1>Do forma alla presenza online della tua attività.</h1>
         <p class="subtitle">
-          Studente di Ingegneria Informatica e sviluppatore web. 
-          Costruisco siti web veloci, moderni e ottimizzati per dispositivi mobili.
+          Realizzo siti web moderni, veloci e ottimizzati per smartphone. 
+          Unisco il rigore dell'Ingegneria Informatica alla cura per il design, 
+          aiutando professionisti e negozi a farsi trovare su Google e convertire visite in clienti.
         </p>
         <div class="hero-buttons">
-          <a href="#contatti" class="btn btn-primary">Parliamo del tuo progetto</a>
-          <a href="#competenze" class="btn btn-secondary">Guarda cosa so fare</a>
+          <a href="#contatti" class="btn btn-primary">Richiedi una consulenza gratuita</a>
+          <a href="#competenze" class="btn btn-secondary">Scopri i servizi</a>
         </div>
       </div>
     </section>
@@ -44,25 +48,59 @@
       <p class="section-subtitle">Soluzioni semplici, funzionali e su misura per la tua attività</p>
       
       <div class="cards-grid">
+        <div class="cards-grid">
         <div class="card">
-          <div class="card-icon">💻</div>
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+          </div>
           <h3>Siti Web Vetrina</h3>
           <p>Realizzazione di pagine web veloci, pulite e ottimizzate per presentare al meglio la tua attività locale o professionale.</p>
         </div>
 
         <div class="card">
-          <div class="card-icon">📱</div>
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
           <h3>Design Responsive</h3>
           <p>Ogni sito viene progettato per funzionare senza problemi su qualsiasi schermo: smartphone, tablet e computer fisso.</p>
         </div>
 
         <div class="card">
-          <div class="card-icon">🚀</div>
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
           <h3>Presenza Online & SEO</h3>
           <p>Configurazione hosting, dominio personalizzato e indicizzazione di base su Google e motori di ricerca per farti trovare.</p>
         </div>
       </div>
     </section>
+
+    <!-- SEZIONE COME LAVORO -->
+    <section class="process" id="metodo">
+      <h2 class="section-title">Come lavoro</h2>
+      <p class="section-subtitle">Un percorso lineare e trasparente, dall'idea alla pubblicazione online</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <h3>Consulenza & Analisi</h3>
+          <p>Ci confrontiamo sulle tue esigenze, definiamo le sezioni chiave del sito e stabiliamo gli obiettivi commerciali della tua attività.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <h3>Progettazione & Anteprima</h3>
+          <p>Creo la struttura del sito e ti fornisco un link di anteprima privato. Raccogliamo i tuoi riscontri e perfezioniamo ogni dettaglio.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <h3>Lancio & Indicizzazione</h3>
+          <p>Collego il tuo dominio personalizzato, pubblico il sito su server ad alte prestazioni e lo imposto per essere trovato su Google.</p>
+        </div>
+      </div>
+    </section>
+
 
     <!-- 4. SEZIONE CONTATTI -->
     <section class="contact" id="contatti">
