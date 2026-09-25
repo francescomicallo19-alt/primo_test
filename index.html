@@ -107,21 +107,26 @@
       <h2 class="section-title">Iniziamo a collaborare</h2>
       <p class="section-subtitle">Hai un'idea per un progetto o vuoi modernizzare la tua presenza web? Scrivimi un messaggio.</p>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Grazie per il messaggio! Questa è una demo.');">
+      <form class="contact-form" action="https://formspree.io/f/mqpadgvb" method="POST">
         <div class="form-group">
           <label for="name">Nome o Attività</label>
-          <input type="text" id="name" placeholder="Es. Mario Rossi o Caffè Centrale" required>
+          <input type="text" id="name" name="name" placeholder="Es. Mario Rossi" required>
         </div>
+
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="mario@example.com" required>
+          <label for="email">La tua Email</label>
+          <input type="email" id="email" name="email" placeholder="mario@esempio.it" required>
         </div>
+
         <div class="form-group">
           <label for="message">Come posso aiutarti?</label>
-          <textarea id="message" rows="4" placeholder="Descrivi brevemente il sito che vorresti realizzare..." required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Descrivi brevemente il tuo progetto o la tua attività..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Invia richiesta</button>
+
+        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
       </form>
+
+
     </section>
   </main>
 
