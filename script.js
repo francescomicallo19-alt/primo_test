@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdownBtn = document.getElementById('dropdownBtn');
 
   if (dropdown && dropdownBtn) {
-    // Apre e chiude al click sul pulsante
+    // Apre e chiude al click sull'hamburger
     dropdownBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       dropdown.classList.toggle('active');
     });
 
-    // Chiude la tendina quando clicchi fuori o su una voce
+    // Chiude il menu quando clicchi fuori o su una voce
     document.addEventListener('click', () => {
       dropdown.classList.remove('active');
     });
