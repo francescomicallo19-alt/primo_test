@@ -47,3 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownBtn = document.getElementById('dropdownBtn');
+
+  if (dropdown && dropdownBtn) {
+    // Apre e chiude al click sul pulsante
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+    });
+
+    // Chiude la tendina quando clicchi fuori o su una voce
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+    });
+  }
+});

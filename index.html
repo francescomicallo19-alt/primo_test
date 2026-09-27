@@ -72,21 +72,31 @@
 </head>
 <body>
 
-  <!-- BARRA DI NAVIGAZIONE -->
+  <!-- BARRA DI NAVIGAZIONE CON MENU A TENDINA -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo">
         <span class="logo-symbol">&lt;/&gt;</span>
         <span class="logo-text">Francesco<span class="dot">.</span>dev</span>
       </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#progetti">Progetti</a></li>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#metodo">Metodo</a></li>
-          <li><a href="#contatti" class="nav-btn">Parliamo del tuo sito</a></li>
-        </ul>
-      </nav>
+
+      <div class="nav-actions">
+        <!-- Menu a tendina delle sezioni -->
+        <div class="dropdown">
+          <button class="dropdown-trigger" id="dropdownBtn" type="button" aria-expanded="false">
+            Menu <span>▾</span>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#progetti">Progetti</a>
+            <a href="#servizi">Servizi</a>
+            <a href="#metodo">Metodo</a>
+            <a href="#contatti">Contatti</a>
+          </div>
+        </div>
+
+        <!-- Pulsante di contatto rapido -->
+        <a href="#contatti" class="nav-btn">Parliamo del tuo sito</a>
+      </div>
     </div>
   </header>
 
