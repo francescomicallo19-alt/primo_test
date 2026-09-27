@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Francesco Micallo: web development, modern digital solutions, responsive high-performance interfaces, and bespoke e-commerce experiences.">
+  <title>Francesco Micallo | Web Development & Digital Solutions</title>
+
+  <!-- SOCIAL PREVIEW & WHATSAPP -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://francesco-webdesign.vercel.app/en/">
+  <meta property="og:title" content="Francesco Micallo | Web Development &amp; Digital Solutions">
+  <meta property="og:description" content="Building modern, blazing-fast, custom websites for professionals and businesses. High-performance, mobile-first solutions.">
+  <meta property="og:image" content="https://francesco-webdesign.vercel.app/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- TWITTER / X CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Francesco Micallo | Web Development &amp; Digital Solutions">
+  <meta name="twitter:description" content="Building modern, blazing-fast, custom websites for professionals and businesses.">
+  <meta name="twitter:image" content="https://francesco-webdesign.vercel.app/img/og-cover.png">
+
+  <!-- HREFLANG TAGS FOR MULTILINGUAL SEO -->
+  <link rel="alternate" hreflang="it" href="https://francesco-webdesign.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://francesco-webdesign.vercel.app/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://francesco-webdesign.vercel.app/" />
+
+  <!-- PRECONNECT AND ASYNC GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  </noscript>
+
+  <!-- SHARED STYLESHEET (SALENDO DI UN LIVELLO) -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- CUSTOM FAVICON WITH </> SYMBOL -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f19'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%2338bdf8' font-family='monospace' font-weight='900' font-size='16'%3E%26lt%3B/%26gt%3B%3C/text%3E%3C/svg%3E">
+  
+  <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+  <meta name="google-site-verification" content="of4kfYGj0IysTOYSiKbPm9DRqJYELXK91-NZYfJ7q2g" />
+
+  <!-- STRUCTURED JSON-LD DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Francesco Micallo",
+    "url": "https://francesco-webdesign.vercel.app/en/",
+    "jobTitle": "Freelance Web Developer & Designer",
+    "description": "Building modern, fast, custom websites for professionals, boutique businesses, and enterprises.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Campania",
+      "addressCountry": "IT"
+    },
+    "knowsAbout": ["Web Development", "HTML5", "CSS3", "JavaScript", "WhatsApp E-Commerce", "SEO Optimization"],
+    "sameAs": [
+      "https://www.linkedin.com/in/tuo-profilo-linkedin",
+      "https://github.com/francescomicallo19-alt"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR WITH LANGUAGE SWITCHER & HAMBURGER DROPDOWN -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../" class="logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Francesco<span class="dot">.</span>dev</span>
+      </a>
+
+      <div class="nav-actions">
+        <!-- LANGUAGE SWITCHER: IT LINKS TO ROOT, EN ACTIVE -->
+        <div class="lang-switch">
+          <a href="../" class="lang-btn">IT</a>
+          <span class="lang-divider">/</span>
+          <span class="lang-btn active">EN</span>
+        </div>
+
+        <!-- DROPDOWN MENU WITH HAMBURGER ICON AND INNER CTA -->
+        <div class="dropdown">
+          <button class="dropdown-trigger" id="dropdownBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+          
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#progetti">Projects</a>
+            <a href="#servizi">Services</a>
+            <a href="#metodo">Method</a>
+            <!-- HIGH-CONTRAST CALL TO ACTION BUTTON INSIDE MENU -->
+            <a href="#contatti" class="menu-cta-btn">Let's discuss your project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Available for new projects • Worldwide & remote</span>
+        </div>
+        <h1>I turn your business into a solid, fast, and authoritative web presence.</h1>
+        <p class="subtitle">
+          I build modern, tailored websites free of bloated templates. Combining the technical rigor of computer engineering with refined aesthetics, designed to rank on Google and convert visitors into clients.
+        </p>
+        <div class="hero-buttons">
+          <a href="#progetti" class="btn btn-primary">View featured work</a>
+          <a href="#contatti" class="btn btn-secondary">Request a consultation</a>
+        </div>
+
+        <div class="hero-features">
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <span>Blazing-fast loading on Vercel</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">📱</span>
+            <span>100% mobile-first optimized</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔒</span>
+            <span>Proprietary clean code, zero heavy plugins</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section portfolio-section" id="progetti">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Featured Work</span>
+          <h2 class="section-title">Recent Projects</h2>
+          <p class="section-subtitle">Custom-developed websites engineered for specific business and industry needs.</p>
+        </div>
+
+        <div class="portfolio-grid portfolio-single">
+          <!-- LAW FIRM CARD -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">Professionals & Legal Advisory</span>
+              <span class="status-live">● Online</span>
+            </div>
+            <h3>Associate Law Firm</h3>
+            <p class="project-desc">
+              Formal, authoritative institutional web architecture. Crafted with a bespoke color palette (midnight blue and antique gold), refined serif typography, clear presentation of practice areas, transparent fee policies, and a preliminary consultation booking form.
+            </p>
+            <div class="project-tags">
+              <span>Corporate Design</span>
+              <span>Typography Serif</span>
+              <span>Lead Generation</span>
+              <span>Zero-Tracker / Privacy-First</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://studio-legale-azure.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Open Live Preview ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- SWEET LUCY CARD -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category">E-Commerce & Food Boutique</span>
+              <span class="status-live">● Online</span>
+            </div>
+            <h3>Sweet Lucy Boutique</h3>
+            <p class="project-desc">
+              Digital showcase and interactive catalog for an artisan pastry shop. Features a reactive slide-over cart built in Vanilla JS with dynamic state handling, mobile scroll-chaining prevention, product carousel, and rapid checkout with automatic order generation via WhatsApp.
+            </p>
+            <div class="project-tags">
+              <span>Interactive Cart</span>
+              <span>Vanilla JavaScript</span>
+              <span>WhatsApp Order API</span>
+              <span>Mobile UX (100dvh)</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://sweet-lucy-capri.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Open Live Preview ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services-section" id="servizi">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">What I Can Do For You</span>
+          <h2 class="section-title">Web Solutions to Scale Your Business</h2>
+          <p class="section-subtitle">Zero compromises on performance, usability, and security.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-box">
+            <div class="service-icon">🏛️</div>
+            <h3>Websites for Professionals & Firms</h3>
+            <p>
+              Prestigious, credible platforms for attorneys, accountants, consultants, and physicians. Designed to communicate authority and capture qualified leads.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">🏬</div>
+            <h3>Websites for Local Businesses & Retail</h3>
+            <p>
+              Digital storefronts for showrooms, studios, and local merchants: operating hours, map routing, and rapid channels to convert local foot traffic.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">🚀</div>
+            <h3>Speed & Search Engine Optimization</h3>
+            <p>
+              Ultra-lightweight code that loads instantly, optimized to ace Google Core Web Vitals and secure prominent positioning on Google Search and Maps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD SECTION -->
+    <section class="section process-section" id="metodo">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">My Approach</span>
+          <h2 class="section-title">How We Work Together</h2>
+          <p class="section-subtitle">A straightforward workflow with zero technical surprises or wasted time.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Discovery & Strategy</h3>
+            <p>We analyze your target audience and the key information they seek, defining the optimal layout to highlight your competitive strengths.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>Development & Live Preview</h3>
+            <p>I write bespoke clean code and provide a private staging link so you can test the live site directly on your smartphone before release.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Launch & Support</h3>
+            <p>I connect your custom domain, activate HTTPS security protocols, and deliver a reliable, fully independent web platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contatti">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Get In Touch</span>
+          <h2 class="section-title">Let's Discuss Your Project</h2>
+          <p class="section-subtitle">Need a new website or looking to upgrade your existing one? Reach out anytime.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- DIRECT CHANNELS -->
+          <div class="contact-direct">
+            <h3>Direct Contact</h3>
+            <p>For an immediate response, message me directly on WhatsApp or drop an email:</p>
+            
+            <a href="https://wa.me/393928811969?text=Hi%20Francesco,%20I%20would%20like%20information%20about%20a%20website" target="_blank" rel="noopener noreferrer" class="contact-pill wa-pill">
+              <span>💬 Message on WhatsApp</span>
+              <span class="pill-arrow">→</span>
+            </a>
+
+            <div class="direct-info-box">
+              <div class="info-row">
+                <span class="info-label">Direct Email:</span>
+                <span class="info-val">francesco.micallo19@gmail.com</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Location:</span>
+                <span class="info-val">Campania, Italy • Available worldwide & remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMSPREE FORM -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="https://formspree.io/f/mqpadgvb" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name or Business Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Miller Advisory / Dr. Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Briefly describe what you'd like to build</label>
+                <textarea id="message" name="message" rows="4" placeholder="e.g. I need a modern showcase website to present my services and generate client inquiries..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Francesco Micallo. Professional Web Development.</p>
+      <div class="footer-links">
+        <a href="https://github.com/francescomicallo19-alt" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SHARED INTERACTION SCRIPT -->
+  <script src="../script.js" defer></script>
+
+</body>
+</html>

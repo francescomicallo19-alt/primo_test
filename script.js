@@ -16,7 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 2. Animazione di comparsa progressiva delle sezioni (Intersection Observer)
+  // 2. Gestione apertura e chiusura del Menu Hamburger Dropdown
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownBtn = document.getElementById('dropdownBtn');
+
+  if (dropdown && dropdownBtn) {
+    // Apre/chiude la tendina al click sull'hamburger
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+    });
+
+    // Chiude il menu quando si clicca fuori o su una voce
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+    });
+  }
+
+  // 3. Animazione di comparsa progressiva delle sezioni (Intersection Observer)
   const observerOptions = {
     threshold: 0.15
   };
@@ -33,10 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const hiddenElements = document.querySelectorAll('.fade-in');
   hiddenElements.forEach(el => revealOnScroll.observe(el));
 
-  // 3. Blocco del tasto destro per scoraggiare l'ispezione immediata
+  // 4. Blocco del tasto destro per scoraggiare l'ispezione immediata
   document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-  // 4. Blocco scorciatoie devtools (F12, Ctrl+Shift+I, Ctrl+U)
+  // 5. Blocco scorciatoie devtools (F12, Ctrl+Shift+I, Ctrl+U)
   document.addEventListener('keydown', (e) => {
     if (e.key === 'F12') {
       e.preventDefault();
@@ -46,22 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdown = document.querySelector('.dropdown');
-  const dropdownBtn = document.getElementById('dropdownBtn');
-
-  if (dropdown && dropdownBtn) {
-    // Apre e chiude al click sull'hamburger
-    dropdownBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdown.classList.toggle('active');
-    });
-
-    // Chiude il menu quando clicchi fuori o su una voce
-    document.addEventListener('click', () => {
-      dropdown.classList.remove('active');
-    });
-  }
 });

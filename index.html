@@ -21,6 +21,11 @@
   <meta name="twitter:description" content="Sviluppo siti web moderni, veloci e su misura per professionisti e imprese.">
   <meta name="twitter:image" content="https://francesco-webdesign.vercel.app/img/og-cover.png">
 
+  <!-- COLLEGAMENTI HREFLANG PER LA SEO BILINGUE -->
+  <link rel="alternate" hreflang="it" href="https://francesco-webdesign.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://francesco-webdesign.vercel.app/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://francesco-webdesign.vercel.app/" />
+
   <!-- PRECONNESSIONE E CARICAMENTO FONT OTTIMIZZATO SENZA RALLENTAMENTI -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +68,7 @@
 </head>
 <body>
 
-  <!-- HEADER E NAVBAR CON HAMBURGER MENU DROPDOWN -->
+  <!-- HEADER E NAVBAR CON SELETTORE LINGUA ED HAMBURGER DROPDOWN -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo">
@@ -71,8 +76,15 @@
         <span class="logo-text">Francesco<span class="dot">.</span>dev</span>
       </a>
 
-      <!-- MENU A TENDINA CON ICONA AD HAMBURGER E CTA INTERNA -->
       <div class="nav-actions">
+        <!-- SELETTORE LINGUA: IT ATTIVO, EN LINK ALLA SOTTO-CARTELLA -->
+        <div class="lang-switch">
+          <span class="lang-btn active">IT</span>
+          <span class="lang-divider">/</span>
+          <a href="en/" class="lang-btn">EN</a>
+        </div>
+
+        <!-- MENU A TENDINA CON ICONA AD HAMBURGER E CTA INTERNA -->
         <div class="dropdown">
           <button class="dropdown-trigger" id="dropdownBtn" type="button" aria-label="Apri menu di navigazione" aria-expanded="false">
             <span class="hamburger-icon">
