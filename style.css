@@ -373,9 +373,10 @@ body {
   gap: 28px;
 }
 
+/* Con 3 progetti la griglia si espande liberamente nel container */
 .portfolio-single {
-  max-width: 720px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .project-card {
@@ -443,6 +444,10 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
   color: var(--text-sub);
+}
+
+.project-actions {
+  margin-top: auto;
 }
 
 .btn-project {
