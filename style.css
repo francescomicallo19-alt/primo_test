@@ -777,4 +777,41 @@ body {
   .btn {
     width: 100%;
   }
+
+    /* --- PROGETTI FULL-BLEED SU MOBILE (FINO AL BORDO DELLO SCHERMO) --- */
+  .portfolio-grid {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 20px;
+
+    /* Sfondamento a destra: esce dal container e tocca il bordo fisico del display */
+    margin-right: -24px;
+    padding-right: 24px;   /* Permette all'ultima card di avere spazio alla fine dello scroll */
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* Nasconde la scrollbar */
+  .portfolio-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .portfolio-grid {
+    scrollbar-width: none;
+  }
+
+  /* Larghezza calibrata per toccare il bordo destro */
+  .project-card {
+    flex: 0 0 82vw;               /* Occupa l'82% della larghezza dello schermo */
+    width: 82vw;
+    min-width: 280px;
+    max-width: 340px;             /* Rimuove i blocchi rigidi */
+    scroll-snap-align: start;
+    padding: 24px 20px;
+  }
+
 }
