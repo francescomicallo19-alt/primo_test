@@ -469,6 +469,11 @@ body {
   color: #07090e;
 }
 
+/* INDICAZIONE VISIVA SCORRIMENTO (NASCOSTA SU DESKTOP) */
+.mobile-swipe-hint {
+  display: none;
+}
+
 /* SEZIONE SERVIZI */
 .services-section {
   border-bottom: 1px solid var(--border-subtle);
@@ -702,6 +707,63 @@ body {
 
   .badge {
     margin-bottom: 16px;
+  }
+
+  /* --- PROGETTI IN SCORRIMENTO ORIZZONTALE SU MOBILE (SCROLL SNAP) --- */
+  .portfolio-grid {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Massima fluidità su Safari iOS */
+    gap: 16px;
+    padding-bottom: 16px;
+    
+    /* Permette alle card di scorrere a filo schermo mantenendo i margini interni */
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* Nasconde la barra di scorrimento su mobile */
+  .portfolio-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .portfolio-grid {
+    scrollbar-width: none;
+  }
+
+  /* Imposta la larghezza della singola card con l'effetto "peek" */
+  .project-card {
+    flex: 0 0 84%;             /* Mostra l'84% della card attuale e fa intravedere la successiva */
+    max-width: 340px;          /* Evita che diventi sproporzionata su tablet verticali */
+    scroll-snap-align: start;  /* Aggancio magnetico all'inizio */
+    padding: 24px;             /* Padding compatto per smartphone */
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+  }
+
+  /* Suggerimento visivo swipe su mobile */
+  .mobile-swipe-hint {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent-cyan);
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
   }
 
   .contact-layout {
